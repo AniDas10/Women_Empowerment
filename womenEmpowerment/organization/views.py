@@ -15,3 +15,6 @@ def register(request):
 
 def homepage(request):
     return render(request, 'Main_page/index.html')
+
+def adminpage(request):
+    return render(request, 'Admin/index.html')
