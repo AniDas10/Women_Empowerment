@@ -6,3 +6,15 @@ def organisations(request):
 
 def organisation(request, organization_id):
     return render(request, 'Organisations/blog-single.html')
+
+def login(request):
+    return render(request, 'Authentication/signin.html')
+
+def register(request):
+    return render(request, 'Authentication/signup.html')
+
+def homepage(request):
+    return render(request, 'Main_page/index.html')
+
+def adminpage(request):
+    return render(request, 'Admin/index.html')
