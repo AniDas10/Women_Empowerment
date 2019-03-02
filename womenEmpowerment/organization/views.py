@@ -6,3 +6,9 @@ def organisations(request):
 
 def organisation(request, organization_id):
     return render(request, 'Organisations/blog-single.html')
+
+def login(request):
+    return 
+
+def register(request):
+    return
