@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Woman
+from .models import WomanNeedsSupport, WomanNeedsJob
 # Register your models here.
 class WomanAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'percentage_funded', 'deadline')
