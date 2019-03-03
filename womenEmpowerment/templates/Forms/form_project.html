@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,15 +8,15 @@
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'Authentication/css/bootstrap.min.css'%}" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<script src="js/jquery.min.js"> </script>
-<script src="js/bootstrap.min.js"> </script>
+<link href="{% static 'Authentication/css/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'Authentication/css/font-awesome.css'%}" rel="stylesheet"> 
+<script src="{% static 'Authentication/js/jquery.min.js'%}"> </script>
+<script src="{% static 'Authentication/js/bootstrap.min.js'%}"> </script>
 </head>
 <body style="background-color: #0078ff ; margin: 0 auto;">
-    <div class="container " style="margin-top:3.5rem;margin-bottom: 7rem; ">
+    <div class="container" style="margin-top:2rem;margin-bottom: 7rem; padding: 6rem auto; height: 90vh;">
 		<div class="grid-form1" style="margin-top: 2rem;">
             <h3 style="align-content: center;text-align: center;">Request application</h3>
               <div class="tab-content">
@@ -56,18 +56,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <input type="file" name="profile_pic" id="exampleInputFile">
                                     </div>
                                 </div>
+                                <button class="btn btn-primary btn-lg float-right" type="submit" style="border-radius: 6px;">Submit</button>	
                            </form>
-          
+                           <button class="btn btn-primary btn-outline btn-lg float-right" style="border-radius: 6px; margin-top: 2rem; margin-left: auto;">Go Back To Home</button>
                         </div>
     </div>
-    
-    <div class="row" style="margin-top:3.6rem;">
-            <div class="col-md-4"style="width: 350px;"></div>
-            <div class="col-md-5" style="text-align: center;">
-                    <input class="btn btn-primary btn-lg" type="button" value="Home" style="margin-right:2rem;border-radius:.8rem; padding: .6rem 2rem;">
-                    <input class="btn btn-primary btn-lg" type="submit" value="Submit"style="margin-right:2rem;border-radius:.8rem; padding: .6rem 2rem;">
-                    <input class="btn btn-primary btn-lg" type="reset" value="Reset"style="border-radius:.8rem; padding: .6rem 2rem;"></div>
-          </div>
         </div>		<!---->
 		
         <div class="copy-right" style="margin-bottom:1rem; ">
@@ -75,8 +68,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       
 <!---->
 <!--scrolling js-->
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="{% static 'Authentication/js/jquery.nicescroll.js'%}"></script>
+	<script src="{% static 'Authentication/js/scripts.js' %}"></script>
 	<!--//scrolling js-->
 </body>
 </html>

@@ -13,8 +13,11 @@ def login(request):
 def register(request):
     return render(request, 'Authentication/signup.html')
 
-def homepage(request):
-    return render(request, 'Main_page/index.html')
-
 def adminpage(request):
     return render(request, 'Admin/index.html')
+
+def supportform(request):
+    return render(request, 'Forms/form_org.html')
+
+def jobapp(request):
+    return render(request, 'Forms/form_job.html')
