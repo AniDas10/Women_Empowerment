@@ -15,3 +15,9 @@ def register(request):
 
 def adminpage(request):
     return render(request, 'Admin/index.html')
+
+def supportform(request):
+    return render(request, 'Forms/form_org.html')
+
+def jobapp(request):
+    return render(request, 'Forms/form_job.html')
