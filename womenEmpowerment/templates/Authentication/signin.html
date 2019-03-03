@@ -38,42 +38,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="{% static 'Authentication/js/jquery.min.js' %}"> </script>
 <script src="{% static 'Authentication/js/bootstrap.min.js' %}"> </script>
 </head>
-<body style="background-color:cornsilk;">
-	<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"  style="color:black" <!important> >
-    <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top"><img src="{% static 'Home/img/dow.jpg' %}" height="22px" width="22px">UnitedWe</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">Our Story</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Feedback</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body style="background-color:rgba(0, 120, 255, 0.8); height: 100vh;">
 	<div class="login">
-		<h1><a href="index.html">Join our platform and contribute </a></h1>
+		<h1><a style="color: white;">Join our platform and contribute </a></h1>
 		<div class="login-bottom">
 			<h2>Login</h2>
 			<form>
@@ -94,10 +61,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="col-md-6 login-do">
 				<label class="hvr-shutter-in-horizontal login-sub">
-					<input type="submit" value="login">
+					<input type="submit" value="Login">
 					</label>
 					<p>Do not have an account?</p>
-				<a href="signup.html" class="hvr-shutter-in-horizontal">Signup</a>
+				<a href="{% url 'organisation_register' %}" class="hvr-shutter-in-horizontal" style="text-decoration: none;"><strong>Sign Up</strong></a>
 			</div>
 			
 			<div class="clearfix"> </div>
@@ -106,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 		<!---->
 <div class="copy-right">
-            <p> &copy; ZeroDay2k19</p>	    </div>  
+            <p style="color: white;"> &copy; ZeroDay2k19</p>	    </div>  
 <!---->
 <!--scrolling js-->
 	<script src="{% static 'Authentication/js/jquery.nicescroll.js' %}"></script>
