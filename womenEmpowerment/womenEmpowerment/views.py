@@ -4,4 +4,4 @@ def home(request):
     return render(request, 'Main_page/index.html')
 
 def organizations_all(request):
-    return render(request, 'Main_page/organizations_all.html')
+    return render(request, 'Main_page/organizations_all.html', {'title':'Haga' })

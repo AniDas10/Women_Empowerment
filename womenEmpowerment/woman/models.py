@@ -8,11 +8,11 @@ class WomanNeedsSupport(models.Model):
     project_description = models.TextField() 
     requirements = models.TextField()
     deadline = models.DateTimeField(auto_now_add=True)
-    percentage_funded = models.IntegerField()
+    percentage_funded = models.IntegerField(default=0)
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
 
 class WomanNeedsJob(models.Model):
-    main_photo = models.ImageField(upload_to='women/photos/%Y/%m/%d')
+    main_photo = models.ImageField(upload_to='women/photos/%Y/%m/%d', blank=True)
     about_me = models.TextField()
     skills = models.TextField()
     linkedIn = models.CharField(max_length=250)

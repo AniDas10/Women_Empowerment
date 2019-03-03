@@ -76,9 +76,6 @@
             <a class="nav-link js-scroll" href="#about">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll" href="{% url 'main_organizations_all' %}">Organizations</a>
           </li>
           <li class="nav-item">
@@ -98,7 +95,8 @@
                 Register
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Individual</a>
+                <a class="dropdown-item" href="{% url 'woman_job_register' %}">Individual Jobs</a>
+                <a class="dropdown-item" href="{% url 'woman_fund_register' %}">Individual Projects</a>
                 <a class="dropdown-item" href="#">Organization</a>
               </div>
             </li>
